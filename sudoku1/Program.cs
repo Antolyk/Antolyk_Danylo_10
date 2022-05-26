@@ -37,18 +37,13 @@ namespace sudoku1
 
         static void SwapRows()         //Замена рядов
         {
-            Random ran1 = new Random();
-            Random ran2 = new Random();
-            Random ran3 = new Random();
-            Random ran4 = new Random();
-            Random ran5 = new Random();
-            Random ran6 = new Random();
-            int first = ran1.Next(1, 3);
-            int second = ran2.Next(1, 3);
-            int third = ran3.Next(4, 6);
-            int fourth = ran4.Next(4, 6);
-            int fifth = ran5.Next(7, 9);
-            int sixth = ran6.Next(7, 9);
+            Random ran = new Random();
+            int first = ran.Next(1, 3);
+            int second = ran.Next(1, 3);
+            int third = ran.Next(4, 6);
+            int fourth = ran.Next(4, 6);
+            int fifth = ran.Next(7, 9);
+            int sixth = ran.Next(7, 9);
             for (int k = 0; k < 9; k++)
                 {
                     int tmp = grid[first - 1, k];
